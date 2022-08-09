@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="./styles/mediaQueries.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <nav class="navbar"> 
-            <img src="./svg/Decor.svg" class="logo"  id="home"alt="logo">
+            <img src="./svg/Decor.svg" class="logo"  alt="logo">
             <ul class="menu" id="menu">
                 <a href="#home">Home</a>
-                <li><a href="#">Servicios</a></li>
-                <li></li><a href="#">Acerca de mí</a></li>
-                <li></li><a href="#">Mis habilidades</a></li>
-                <li></li><a href="#">Mi portafolio</a></li>
-                <li></li><a href="#">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li></li><a href="#acerca">Acerca de mí</a></li>
+                <li></li><a href="#habilidades">Mis habilidades</a></li>
+                <li></li><a href="#portafolio">Mi portafolio</a></li>
+                <li></li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="menu-bar" id="menu-bar">
                 <img src="./ico/menu.svg" class="hamburger" alt="menu">
@@ -51,71 +51,173 @@
             </div>
         </div>
     </main>
-    <section    class="section">
-        <div class="habilidades">
-            <h1>Habilidades</h1>
-            <h2>95%</h2>
-            <h3>Web Design</h3>
-            <h2>95%</h2>
-            <h3>Mobile app design</h3>
-            <h2>95%</h2>
-            <h3>HTML,CSS,JS</h3>
-            <h2>60%</h2>
-            <h3>Design Systems</h3>
+    <section class="section">
+        <div class="section-habilidades" id="habilidades">
+            <h2>HABILIDADES</h2>
+            <div class="habilidades">
+                <div class="box-container">
+                    <div class="line"></div>
+                    <div class="skill-box">95%</div>
+                    <div class="box-footer"><h4>Mobile app design</h4></div>
+                </div>
+                <div class="box-container">
+                    <div class="line"></div>
+                    <div class="skill-box">95%</div>
+                    <div class="box-footer"><h4>Web Design</h4></div>
+                </div>
+                <div class="box-container">
+                    <div class="line"></div>
+                    <div class="skill-box">95%</div>
+                    <div class="box-footer"><h4>HTML, CSS, JS</h4></div>
+                </div>
+                <div class="box-container">
+                    <div class="line"></div>
+                    <div class="skill-box">60%</div>
+                    <div class="box-footer"><h4>Design Systems</h4></div>
+                </div>
+            </div>
         </div>
-        <div class="acerca">
+        <div class="acerca" id="acerca">
+            <h2>ACERCA DE MÍ</h2>
+            <div class="decor1">
             <img src="./svg/Decor 1.svg">
-            <h1>ACERCA DE MÍ</h1>
+            </div>
+            <div class="texto">
             <p>Desarrolladora Full Stack en formación con conocimientos en HTML, CSS y JavaScript. Soy una persona a la que le gusta reinventarse constantemente en busca de alcanzar un mejor desempeño.<br><br>
             Mi perfil está orientado al logro, la proactividad, la resolución de problemas y un espíritu de aprendizaje constante.<br><br>
             He encontrado una gran pasión por el desarrollo web y la implementación de aplicaciones que buscan suplir las necesidades sociales.<br><br>
             Busco oportunidades que me permitan aprender cada día a través de retos, trabajar en equipo e implementar mis conocimientos para el bien común.
             </p>
-            <img src="./img/image 9.png">
-            <h3>UVM</h3>
-            <p>2010-2014</p>
-            <img src="./img/logo_academlo 5.png">
-            <h3>Academlo</h3>
-            <p>2020-2021</p>
+            </div>
+            <div class="estudios">
+                <div class="uvm">
+                    <div><img src="./img/image 9.png" height="230rem"></div>
+                    <div><h4>UVM</h4></div>
+                    <div>
+                        <p>2010-2014</p>
+                    </div>
+                </div>
+                <div class="academlo">
+                    <div><img src="./img/logo_academlo 5.png" height="300rem"></div>
+                    <div><h4>Academlo</h4></div>
+                    <div>
+                        <p>2020-2021</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="servicios">
-            <h1>SERVICIOS</h1>
-            <img src="./ico/pencil.svg">
-            <h3>Web Design</h3>
-            <p>Desde diseño hasta implementación del desarrollo</p>
-            <img src="./ico/web.svg">
-            <h3>Desarrollo Web</h3>
-            <p>Desde diseño hasta implementación del desarrollo</p>
-            <img src="./ico/search.svg">
-            <h3>Research</h3>
-            <p>Desde diseño hasta implementación del desarrollo</p>
-            <img src="./ico/Speakerphone.svg">
-            <h3>Marketing</h3>
-            <p>Desde diseño hasta implementación del desarrollo</p>
         </div>
-        <div class="portafolio">
-            <h1>MI PORTAFOLIO</h1>
-            <img src="./img/image 9-1.png" >
-            <h3>Beauty app</h3>
-            <img src="./img/image 10.png" >
-            <3>Training app</3>
-            <img src="./img/Rectangle 58.png" >
-            <h3>Management Web</h3>
-            <img src="img/image 11.png" >
-            <h3>Management Web</h3>
+        <div class="servicios" id="servicios">
+            <h2>SERVICIOS</h2>
+            <div class="servicios">
+                <div class="box-container">
+                    <div class="service-icon">
+                        <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 8.40222C26.9875 8.40222 8.33331 27.2106 8.33331 50.4132C8.33331 73.6159 26.9875 92.4243 50 92.4243C73.0125 92.4243 91.6667 73.6159 91.6667 50.4132C91.6667 27.2106 73.0125 8.40222 50 8.40222Z" fill="white" stroke="#FF4F6F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M33.3333 88.9289V58.8154L50 29.4077L66.6666 58.8154V88.9289" fill="#FF4F6F"></path>
+                            <path d="M33.3333 88.9289V58.8154L50 29.4077L66.6666 58.8154V88.9289" stroke="#FF4F6F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M33.3333 58.8154C33.3333 58.8154 38.0291 63.0165 41.6666 63.0165C45.3041 63.0165 50 58.8154 50 58.8154C50 58.8154 54.6958 63.0165 58.3333 63.0165C61.9708 63.0165 66.6666 58.8154 66.6666 58.8154" fill="#FF4F6F"></path>
+                            <path d="M33.3333 58.8154C33.3333 58.8154 38.0291 63.0165 41.6666 63.0165C45.3041 63.0165 50 58.8154 50 58.8154C50 58.8154 54.6958 63.0165 58.3333 63.0165C61.9708 63.0165 66.6666 58.8154 66.6666 58.8154" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div>
+                    <div class="title-service">Web Design</div>
+                    <div class="service-desc">Desde diseño hasta implementacion del desarrollo</div>
+                </div>
+    
+                <div class="box-container">
+                    <div class="service-icon">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M79.1667 16.6666H20.8333C18.6232 16.6666 16.5036 17.5446 14.9408 19.1074C13.378 20.6702 12.5 22.7898 12.5 25V75C12.5 77.2101 13.378 79.3297 14.9408 80.8925C16.5036 82.4553 18.6232 83.3333 20.8333 83.3333H79.1667C83.75 83.3333 87.5 79.5833 87.5 75V25C87.5 22.7898 86.622 20.6702 85.0592 19.1074C83.4964 17.5446 81.3768 16.6666 79.1667 16.6666ZM79.1667 75H20.8333V33.3333H79.1667V75Z" fill="#FFBC57"></path>
+                            </svg>
+                    </div>
+                    <div class="title-service">Desarrollo Web</div>
+                    <div class="service-desc"> Desde diseño hasta implementacion del desarrollo</div>
+                </div>
+    
+                <div class="box-container">
+                    <div class="service-icon">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M45.8333 79.1667C64.2428 79.1667 79.1667 64.2428 79.1667 45.8333C79.1667 27.4238 64.2428 12.5 45.8333 12.5C27.4238 12.5 12.5 27.4238 12.5 45.8333C12.5 64.2428 27.4238 79.1667 45.8333 79.1667Z" stroke="#7F5FD8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M87.5 87.5L69.375 69.375" stroke="#7F5FD8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div>
+                    <div class="title-service">Research</div>
+                    <div class="service-desc">Desde diseño hasta implementacion del desarrollo</div>
+                </div>
+    
+                <div class="box-container">
+                    <div class="service-icon">
+                        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M82.5367 13.6904C88.6417 10.1979 96.25 14.6071 96.25 21.6471V79.1863C96.25 86.2217 88.6463 90.6354 82.5367 87.1429L58.3642 73.3333H50.4167V89.375C50.4167 92.414 49.2095 95.3284 47.0606 97.4773C44.9118 99.6261 41.9973 100.833 38.9584 100.833C35.9194 100.833 33.005 99.6261 30.8561 97.4773C28.7073 95.3284 27.5 92.414 27.5 89.375V72.875C21.948 71.7249 17.0191 68.5583 13.6653 63.9867C10.3115 59.4151 8.77067 53.7629 9.34049 48.1217C9.9103 42.4805 12.5503 37.2506 16.7506 33.4421C20.9509 29.6335 26.4135 27.5165 32.0834 27.5H58.3642L82.5367 13.6904ZM55.0001 36.6667H32.0834C28.4367 36.6667 24.9393 38.1153 22.3607 40.694C19.782 43.2726 18.3334 46.7699 18.3334 50.4167C18.3334 54.0634 19.782 57.5608 22.3607 60.1394C24.9393 62.718 28.4367 64.1667 32.0834 64.1667H55.0001V36.6667ZM64.1667 66.0917L87.0834 79.1863V21.6471L64.1667 34.7417V66.0917ZM36.6667 73.3333V89.375C36.6667 89.9828 36.9082 90.5657 37.3379 90.9955C37.7677 91.4252 38.3506 91.6667 38.9584 91.6667C39.5662 91.6667 40.1491 91.4252 40.5788 90.9955C41.0086 90.5657 41.2501 89.9828 41.2501 89.375V73.3333H36.6667Z" fill="#34B0BE"></path>
+                            </svg>
+                    </div>
+                    <div class="title-service">Marketing</div>
+                    <div class="service-desc">Desde diseño hasta implementacion del desarrollo</div>
+                </div>
+            </div>
+        </div>
+        <div class="mi-portafolio" id="portafolio">
+            <h2>MI PORTAFOLIO</h2>
+            <div class="portafolio">
+                <div class="box-container">
+                   <div class="trabajos"> 
+                        <div class="img-works"><img src="./img/image 9-1.png" height="100%" width="100%"></div>
+                        <div class="subtitle-works">Beauty app</div>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="trabajos"> 
+                            <div class="img-works"><img src="./img/image 10.png" height="100%" width="100%"></div> 
+                        <div class="subtitle-works">Training app</div>
+                    </div>
+                </div>
+                <div class="box-container">
+                   <div class="trabajos"> 
+                        <div class="img-works"><img src="./img/image 11.png" height="100%" width="100%"></div> 
+                        <div class="subtitle-works">Management app</div>
+                    </div>
+                </div>
+                <div class="box-container">
+                   <div class="trabajos"> 
+                        <div class="img-works"><img src="./img/Rectangle 58.png" height="100%" width="88%"></div> 
+                        <div class="subtitle-works">Management Web</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contacto">
-            <h1>CONTACTO</h1>
-            <img src="./ico/phone.svg">
-            <h3>Número celular</h3>
-            <p>5526895424</p>
-            <img src="./ico/mail.svg">
-            <h3>Email</h3>
-            <p>ejemplo@correo.com</p>
+            <h2>CONTACTO</h2>
+            <div class="contactame">
+                <div class="box-container">
+                    <div class="contacta"> 
+                         <div class="contact-icons">
+                            <svg width="120" height="120" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.6669 28.2V33.2C36.6688 33.6642 36.5737 34.1236 36.3877 34.5489C36.2018 34.9742 35.929 35.356 35.587 35.6698C35.245 35.9836 34.8412 36.2225 34.4015 36.3712C33.9618 36.5199 33.4958 36.5751 33.0335 36.5333C27.9049 35.9761 22.9785 34.2236 18.6502 31.4167C14.6233 28.8578 11.2091 25.4436 8.65021 21.4167C5.83351 17.0687 4.08062 12.1183 3.53355 6.96666C3.4919 6.50577 3.54667 6.04126 3.69438 5.6027C3.84209 5.16414 4.0795 4.76114 4.39149 4.41936C4.70348 4.07758 5.08322 3.8045 5.50653 3.61753C5.92984 3.43055 6.38745 3.33376 6.85021 3.33332H11.8502C12.6591 3.32536 13.4432 3.61179 14.0565 4.13921C14.6698 4.66663 15.0703 5.39907 15.1835 6.19999C15.3946 7.8001 15.786 9.3712 16.3502 10.8833C16.5745 11.4799 16.623 12.1282 16.4901 12.7515C16.3571 13.3747 16.0483 13.9468 15.6002 14.4L13.4835 16.5167C15.8561 20.6892 19.311 24.1441 23.4835 26.5167L25.6002 24.4C26.0534 23.9519 26.6255 23.6431 27.2487 23.5101C27.872 23.3772 28.5203 23.4257 29.1169 23.65C30.629 24.2142 32.2001 24.6056 33.8002 24.8167C34.6098 24.9309 35.3492 25.3387 35.8778 25.9625C36.4063 26.5863 36.6872 27.3826 36.6669 28.2Z" fill="#34B0BE"></path>
+                                </svg>
+                         </div> 
+                         <div class="title-contact">Número celular</div>
+                         <div class="subtitle-contact">5526895424</div>
+                     </div>
+                 </div>
+     
+                 <div class="box-container" id="contacto">
+                    <div class="contacta"> 
+                         <div class="contact-icons">
+                            <svg width="120" height="120" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66683 6.66666H33.3335C35.1668 6.66666 36.6668 8.16666 36.6668 9.99999V30C36.6668 31.8333 35.1668 33.3333 33.3335 33.3333H6.66683C4.8335 33.3333 3.3335 31.8333 3.3335 30V9.99999C3.3335 8.16666 4.8335 6.66666 6.66683 6.66666Z" fill="#34b0be" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M36.6668 9.99999L20.0002 21.6667L3.3335 9.99999" fill="#34b0be"></path>
+                                <path d="M36.6668 9.99999L20.0002 21.6667L3.3335 9.99999" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                         </div> 
+                         <div class="title-contact">Email</div>
+                         <div class="subtitle-contact">ejemplo@correo.com</div>
+                     </div>
+                 </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="pie">
         Hecho con  ♥ en Academlo
     </footer>
     <script src="./scripts/index.js"></script>

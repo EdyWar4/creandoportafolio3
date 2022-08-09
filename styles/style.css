@@ -22,7 +22,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-color:
-        rgb(242, 252, 253);
+        rgb(245, 248, 248);
     overflow-x: hidden;
      
 }
@@ -77,6 +77,7 @@ padding-left: 2rem;
 }
 
 .hero {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(8,1fr);
 }
@@ -95,13 +96,16 @@ padding-left: 2rem;
     padding-top: 0px;
     margin-top: 0px;;
     width: 400px;
-    height: 575px;
+    height: 568px;
 }
 .info-content {
+    
     grid-column: 3/8;
     display: inline-block;
     position:relative;
     left: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .info-content h3 {
     color:var(--secundario);
@@ -134,6 +138,10 @@ padding-left: 2rem;
     border-style: solid;
     border-width: 0.15rem;
     border-color: var(--principal);
+}
+
+.ico img:hover {
+    border-color: var(--terciario);
 }
 
 .contact {
@@ -174,4 +182,290 @@ padding-left: 2rem;
 .contact .btn:hover{
     background-color: var(--terciario);
     border-color: var(--terciario);
+}
+
+.section {
+    margin: auto;
+    text-align: justify;
+    width: 90%;
+}
+
+.section h2 {
+    color: var(--secundario);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 4rem 0;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+
+
+.line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 12rem;
+    height: 0.8rem;
+    background: var(--principal);
+    position: relative;
+    top: 0.8rem;
+    left: -2rem;
+}
+
+.skill-box {
+    width: 16rem;
+    height: 11rem;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.3rem;
+    font-weight: 500;
+    box-shadow: 0.1px 0.2px 9px var(--grey);
+    color: var(--principal);
+}
+
+.box-footer {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--terciario);
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.decor1 {
+    position: absolute;
+    top: 200vh;
+    right: 1rem;
+    flex-wrap: wrap;
+}
+
+.texto {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--black-grey);
+}
+
+.estudios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+img {
+    border-style: none;
+}
+.uvm {
+    display: flex;
+    flex-direction: column;
+}
+.uvm > div > h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--black-grey);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.uvm > div > p {
+    display: flex;
+    justify-content: center;
+    color: var(--black-grey);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.academlo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+}
+.academlo > div > h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.1rem;
+    font-size: 2rem;
+    color: var(--black-grey);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.academlo > div > p {
+    display: flex;
+    justify-content: center;
+    color: var(--black-grey);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    width: 15rem;
+    height: 15rem;
+    background: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+    box-shadow: 0.4px 0.4px 12px var(--grey);
+}
+
+.title-service {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.service-desc {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--black-grey);
+}
+
+.portafolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.trabajos {
+    width: autox;
+    height: auto;
+    padding-bottom: 0.5rem;
+    background: var(--white);
+    box-shadow: 0.1px 0.2px 15px var(--grey);
+    cursor: pointer;
+}
+
+.trabajos:hover {
+    border-style: solid;
+    border-color: var(--secundario);
+    box-shadow: 0.1px 0.2px 4px var(--secundario)
+}
+
+.img-works {
+    width: 22rem;
+    height: 16rem;
+    overflow: hidden;
+}
+.subtitle-works {
+    margin-top: 0.2rem;
+    margin-left: 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.trabajos .img-works img {
+    height: 120%;
+    width: 100%;
+}
+
+.contactame {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacta {
+    width: 18rem;
+    height: 20rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0.1px 0.2px 9px var(--grey);
+    margin-bottom: 4rem;
+    
+}
+
+.title-contact {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle-contact {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--black-grey);
+}
+
+.contacta:hover {
+    border-style: solid;
+    border-color: var(--terciario);
+    box-shadow: 0.1px 0.2px 4px var(--terciario)
+}
+
+.pie {
+    color: var(--principal);
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;;
 }
